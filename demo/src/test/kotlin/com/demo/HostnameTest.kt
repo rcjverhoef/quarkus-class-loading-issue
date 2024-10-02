@@ -8,6 +8,8 @@ import org.junit.jupiter.api.Test
 class HostnameTest {
     @Test
     fun testHostname() {
+        println(Runtime.version())
+        println(io.smallrye.common.cpu.CPU.host())
         val x = Hostname.getHostname()
         println(x)
         val client = RangerAdminRESTClient()
