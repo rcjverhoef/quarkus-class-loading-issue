@@ -10,6 +10,7 @@ class HostnameTest {
     fun testHostname() {
         println(Runtime.version())
         println(io.smallrye.common.cpu.CPU.host())
+        println(this::class.java.classLoader)
         val x = Hostname.getHostname()
         println(x)
         val client = RangerAdminRESTClient()
